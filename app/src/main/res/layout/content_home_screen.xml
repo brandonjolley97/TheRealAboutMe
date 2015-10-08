@@ -29,47 +29,95 @@
         android:id="@+id/selfieImage"
         android:cropToPadding="false"
         android:baselineAlignBottom="false"
-        android:background="@drawable/Fixed_Selfie"
+        android:background="@drawable/fixed_selfie"
         android:foregroundGravity="center_horizontal"
         android:adjustViewBounds="false"
         android:layout_marginTop="45dp"
         android:layout_below="@+id/aboutMeTitleText"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:id="@+id/soccerImage"
         android:visibility="gone"
-        android:background="@drawable/Soccer_Ball_Image" />
+        android:background="@drawable/soccerball_image"
+        android:foregroundGravity="center_horizontal"
+        android:layout_alignParentEnd="false" />
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Soccer:  I have played soccer from a young age and it is my favorite sport.  I have played for both competitive and high school teams.  I play a primarily defensive position."
+        android:id="@+id/soccerText"
+        android:visibility="gone"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:id="@+id/booksImage"
         android:visibility="gone"
-        android:background="@drawable/Books_Image" />
+        android:background="@drawable/books_image" />
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Books:  Reading is one of my favorite pastimes.  I am a big fan of fantasy book series, but I also read some science fiction and non-fiction books as well.  My favorite book series currently is the Mistborn Trilogy by Brandon Sanderson."
+        android:id="@+id/booksText"
+        android:visibility="gone"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:id="@+id/borderlandsImage"
         android:visibility="gone"
-        android:background="@drawable/Borderlands_Image" />
+        android:background="@drawable/borderlands_image" />
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Video Games:  I enjoy a wide variety of video games, but my favorite genre is FPS.  Borderlands is one of the best FPS RPGs in my opinion.  I also like online multiplayer FPS games such as CoD.  "
+        android:id="@+id/borderlandsText"
+        android:visibility="gone"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:id="@+id/woodshopImage"
         android:visibility="gone"
-        android:background="@drawable/Woodshop_Image" />
+        android:background="@drawable/woodshop_image" />
 
-    <ImageView
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Woodshop:  I took a woodshop class two years and it was one of my favorite experiences in high school.  I had a great time building several different pieces of furniture and other things such as a longboard."
+        android:id="@+id/woodshopText"
+        android:visibility="gone"
+        android:textSize="15dp" />
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="400dp"
         android:id="@+id/schoolImage"
         android:visibility="gone"
-        android:background="@drawable/School_Image" />
+        android:background="@drawable/school_image" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="School:  School has consumed a lot of my free time because I have taken many AP and Concurrent Enrollment classes.  I would like to say that they were fun, but honestly they sucked for the most part.  Getting college credit wasn’t bad though."
+        android:id="@+id/schoolText"
+        android:visibility="gone"
+        android:textSize="15dp" />
 
     <Button
         android:layout_width="wrap_content"
