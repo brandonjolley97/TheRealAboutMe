@@ -51,6 +51,8 @@ public class HomeScreen extends AppCompatActivity
         woodshopText = (TextView) findViewById(R.id.woodshopText);
         schoolText = (TextView) findViewById(R.id.schoolText);
 
+        setupListeners();
+
     }
 
     @Override
@@ -77,7 +79,7 @@ public class HomeScreen extends AppCompatActivity
 
     public void changeVisibility()
     {
-        clickCount = (clickCount + 1);
+
 
         if(clickCount == 0)
         {
@@ -114,14 +116,15 @@ public class HomeScreen extends AppCompatActivity
             woodshopImage.setVisibility(View.VISIBLE);
             woodshopText.setVisibility(View.VISIBLE);
         }
-        if(clickCount == 5)
-        {
+        if(clickCount == 5) {
             woodshopImage.setVisibility(View.GONE);
             woodshopText.setVisibility(View.GONE);
             schoolImage.setVisibility(View.VISIBLE);
             schoolText.setVisibility(View.VISIBLE);
-            clickCount = 0;
+            clickCount = -1;
         }
+
+        clickCount = (clickCount + 1);
 
 
 

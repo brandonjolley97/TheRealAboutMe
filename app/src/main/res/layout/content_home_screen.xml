@@ -19,13 +19,14 @@
         android:layout_alignParentTop="true"
         android:width="300dp"
         android:height="75dp"
-        android:textSize="65dp"
+        android:textSize="50dp"
         android:layout_centerHorizontal="true"
-        android:gravity="center|center_horizontal" />
+        android:gravity="center|center_horizontal"
+        android:visibility="visible" />
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="225dp"
+        android:layout_height="225dp"
         android:id="@+id/selfieImage"
         android:cropToPadding="false"
         android:baselineAlignBottom="false"
@@ -35,16 +36,19 @@
         android:layout_marginTop="45dp"
         android:layout_below="@+id/aboutMeTitleText"
         android:layout_centerHorizontal="true"
-        android:visibility="visible" />
+        android:visibility="visible"
+        android:src="@drawable/fixed_selfie" />
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/soccerImage"
         android:visibility="gone"
         android:background="@drawable/soccerball_image"
         android:foregroundGravity="center_horizontal"
-        android:layout_alignParentEnd="false" />
+        android:layout_below="@+id/soccerText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -56,11 +60,14 @@
         android:textSize="15dp" />
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/booksImage"
         android:visibility="gone"
-        android:background="@drawable/books_image" />
+        android:background="@drawable/books_image"
+        android:layout_marginBottom="59dp"
+        android:layout_above="@+id/changeSlideButton"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -72,11 +79,14 @@
         android:textSize="15dp" />
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/borderlandsImage"
         android:visibility="gone"
-        android:background="@drawable/borderlands_image" />
+        android:background="@drawable/borderlands_image"
+        android:layout_below="@+id/borderlandsText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -88,11 +98,14 @@
         android:textSize="15dp" />
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/woodshopImage"
         android:visibility="gone"
-        android:background="@drawable/woodshop_image" />
+        android:background="@drawable/woodshop_image"
+        android:layout_below="@+id/woodshopText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -104,11 +117,14 @@
         android:textSize="15dp" />
 
     <ImageView
-        android:layout_width="400dp"
-        android:layout_height="400dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:id="@+id/schoolImage"
         android:visibility="gone"
-        android:background="@drawable/school_image" />
+        android:background="@drawable/school_image"
+        android:layout_below="@+id/schoolText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="49dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -124,11 +140,13 @@
         android:layout_height="wrap_content"
         android:text="Next"
         android:id="@+id/changeSlideButton"
-        android:layout_marginTop="86dp"
-        android:layout_below="@+id/selfieImage"
+        android:height="50dp"
+        android:width="100dp"
+        android:textSize="20dp"
+        android:visibility="visible"
+
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:height="100dp"
-        android:width="200dp"
-        android:textSize="30dp" />
+        android:layout_marginBottom="68dp" />
 
 </RelativeLayout>
